@@ -1,20 +1,27 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import Button from './lib/ui/button';
+import { createStyleSheet, useStyles } from 'react-native-unistyles';
+import DatePicker from './lib/ui/calendar';
 
 export default function App() {
+  const {styles} = useStyles(styleSheet);
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <GestureHandlerRootView style={{flex:1}}>
+      <View style={styles.container}>
+        <Button title='HELLO' variant='primary'/>
+        <DatePicker />
+        <StatusBar style="auto" />
+      </View>
+    </GestureHandlerRootView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const styleSheet = createStyleSheet((theme)=>({
+  container:{
+    flex:1,
+    backgroundColor: theme.color['base'],
+    padding: 2,
+  }
+}))

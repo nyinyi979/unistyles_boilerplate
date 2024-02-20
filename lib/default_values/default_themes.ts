@@ -1,0 +1,41 @@
+import { DefaultColors as Colors } from "./default_colors";
+
+export const DefaultLightPlatelette = {
+    primary: '#4ddbff',
+    primaryForeground: '#12363f',
+    secondary: '#42bb74',
+    secondaryForeground: '#19462c',
+    tertiary: '#ffcb3b',
+    tertiaryForeground: '#645018',
+    success: '#09ff00',
+    successForeground: '#034d00',
+    warning: '#d1bc00',
+    warningForeground: '#695f00',
+    error: '#970000',
+    errorForeground: '#ffd4d4',
+    base: '#fafafa',
+    white: '#ffffff',
+    black: '#000000',
+    lightGray: Colors.slate['300'],
+    darkGray: Colors.slate['800'],
+}
+
+export const DefaultDarkPlatelette = {
+    primary: '#4ddbff',
+    primaryForeground: '#12363f',
+    secondary: '#42bb74',
+    secondaryForeground: '#19462c',
+    tertiary: '#ffcb3b',
+    tertiaryForeground: '#645018',
+    success: '#09ff00',
+    successForeground: '#034d00',
+    warning: '#d1bc00',
+    warningForeground: '#695f00',
+    error: '#970000',
+    errorForeground: '#ffd4d4',
+    base: '#202020',
+    white: '#000000',
+    black: '#ffffff',
+    lightGray: Colors.slate['800'],
+    darkGray: Colors.slate['300'],
+}
