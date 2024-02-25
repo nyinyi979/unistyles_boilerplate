@@ -21,7 +21,7 @@ export default function App() {
 const styleSheet = createStyleSheet((theme)=>({
   container:{
     flex:1,
-    backgroundColor: theme.color['base'],
+    backgroundColor: theme.color.base,
     padding: 2,
   }
 }))
